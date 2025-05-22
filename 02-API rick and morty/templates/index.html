@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Characters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+</head>
+
+<body>
+
+    <!-- Sección Parallax 1 -->
+    <div class="parallax parallax"></div>
+
+
+    <div class="content">
+        <h1>Rick and Morty Characters</h1>
+        <div id="characters">
+            {% for character in characters %}
+            <div class="character-card">
+                <img src="{{ character['image'] }}" alt="{{ character['name'] }}">
+                <h2>{{ character['name'] }}</h2>
+                <p>Species: {{ character['species'] }}</p>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

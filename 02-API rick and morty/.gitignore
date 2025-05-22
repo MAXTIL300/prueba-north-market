@@ -1,0 +1,13 @@
+# Ignorar entorno virtual
+env/
+
+# Ignorar archivos de configuraciones del sistema operativo
+.DS_Store   # Para MacOS
+Thumbs.db   # Para Windows
+
+# Ignorar archivos de configuración de IDEs o editores
+.idea/      # Para JetBrains (PyCharm, etc.)
+.vscode/    # Para Visual Studio Code
+
+# Archivos de logs y temporales
+
